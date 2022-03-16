@@ -1,0 +1,272 @@
+
+:root{
+    --principal:#ffffff;
+    --secondary:#bd078e;
+    --fontprimarycolor: #ffffff;
+ 
+   }
+/* normalize*/
+*,
+*::after,
+*::before{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/*stylos globales*/
+html{
+   
+    font-size: 62.5%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+/*clases helper*/
+.flex-row{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    max-width: 1080px;
+    margin:  0 auto;
+}
+/*STYLE DE HEADER*/
+header .navbar{
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+header .logo{
+    flex-basis:30%;
+}
+
+
+header .menu{
+    flex-basis: 40%;
+    justify-content: space-between;
+}
+
+.menu .menu__item{
+    border:2px solid var(--principal);
+    transition:  all .3s ease-in-out;
+    
+
+}
+
+.menu .menu__item .menu__link{
+    font-size: 1.4em;
+    padding: 1rem;
+    position: relative;
+    color: var(--secondary);
+    font-weight: 700;
+   
+}
+
+.menu .menu__item .menu__link:hover {
+    background-color: #edf2fd;
+    border-radius: 3.35rem;
+    color: #233ea7;
+}
+/*-----------------*/
+
+
+/*stylo de section*/
+.section__slider{
+    width: 100%;
+    background-color:#cbcbcb;
+    height: 350px;
+}
+.section1{
+    width: 100%;
+    background-color:rgb(243 243 243);
+    height: 650px;
+}
+.disep{
+    padding: 14px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.section1__servicios{
+    text-align: center;
+}
+.section1 .section1__servicios{
+    margin: 15px;
+    
+    height: 300px;
+}
+.section1__servicios .section1__servicio1{
+    background-color: white;
+    width:180px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+}
+.section1__servicios .section1__servicio2{
+    background-color: white;
+    width:180px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+}
+.section1__servicios .section1__servicio3{
+    background-color: white;
+    width:180px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+}
+
+
+.section1 .section1__planes{
+    margin: 15px;
+    background-color:lightcoral;
+    height: 300px;
+}
+.section__Galeri{
+    width: 100%;
+    text-align:center;
+    background-color:rgb(221 219 220);
+    height: 750px;
+}
+.section__Galeri .galeria{
+    margin: 15px;
+    display: inline-block;
+}
+.galeria .ims{
+    display: inline-block;
+}
+.ims{
+    width: 180px;
+    margin: 27px;
+}
+.contactanos{
+  
+    background-color: #f7f7f7;
+    margin: 20px;
+    height: 400px;
+   
+}
+
+.contactanos .contac__img{
+    display: inline-block;
+    width: 40%;
+    margin: 20px;
+    text-align: left;
+}
+.contactanos .contac__fomr{
+    display: inline-block   ;
+    width: 40%;
+    margin: 20px;
+    
+}
+.ims_cont{
+    width: 400px;
+
+}
+/*Formulario*/
+#formu {
+    width: 65%;
+    background-image: linear-gradient(260deg, #06249B 19%, #6A0B86 100%);
+    }
+#formu input{
+    background-color: white;
+    border: none;
+    margin: 4px;
+    padding: 4px;
+}  
+#formu textarea{
+    background-color: white;
+    border: none;
+    margin: 3px;
+    padding: 4px;
+} 
+
+.section__header{
+    width: 100%;
+    height: 80px;
+    background-color: #d9d9d9;
+}
+.section__body{
+    width: 100%;
+    height: 400px;
+}
+.text__titulo{
+    padding: 24px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*FIN---------------*/
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+   min-height: 100vh;
+    background-color: var(--principal);
+}
+/*stylo de footer*/
+footer{
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--principal);
+}
+footer p{
+    text-align: center;
+    font-size: 1.4em;
+    color: var(--secondary);
+    font-weight: bold;
+
+}
+
+/*---------------*/
+/* media cuery*/
+@media screen and (max-width: 768px){
+    header .navbar{
+         flex-wrap: wrap;
+         justify-content: center;
+        
+     }
+     .menu .menu__item .menu__link{
+        font-size: 1.4em;
+    
+    }
+   
+    }
+
+
+
+    /*-----------------------*/
+    .ml3 {
+        font-weight: 900;
+        font-size: 5.0em;
+        text-align: center;
+        line-height: 1;
+        color: #06249B;
+      }
+      
+    .font{
+        font-weight: 700;
+        font-size: 5.8em;
+        text-align: center;
+        line-height: 1;
+        color: #cb7eb2;
+        margin-top: 10px;
+    }
+    .font2{
+        font-weight: 300;
+        font-size: 3.3em;
+        text-align: center;
+        line-height: 1;
+    }
