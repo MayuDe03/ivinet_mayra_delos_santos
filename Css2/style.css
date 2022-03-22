@@ -1,4 +1,3 @@
-
 :root{
     --principal:#ffffff;
     --secondary:#bd078e;
@@ -38,6 +37,10 @@ a{
     margin:  0 auto;
 }
 /*STYLE DE HEADER*/
+.header__cabecera{
+    padding-bottom:1%;
+    padding-top:1%
+}
 header .navbar{
     min-height: 10vh;
     justify-content: space-between;
@@ -45,7 +48,7 @@ header .navbar{
     padding: 0 2rem;
 }
 header .logo{
-    flex-basis:30%;
+    flex-basis:23%;
 }
 
 
@@ -60,9 +63,17 @@ header .menu{
     
 
 }
+.text__central{
+    font-size: 16px;
+    font-weight: 700;
+    color: #23da95;
+    background-color: #f4f7fb;
+    padding: 7px;
+    border-radius: 0.8rem;
+}
 
 .menu .menu__item .menu__link{
-    font-size: 1.4em;
+    font-size: 1.6em;
     padding: 1rem;
     position: relative;
     color: var(--secondary);
@@ -217,17 +228,29 @@ body{
 }
 /*stylo de footer*/
 footer{
-    height: 10vh;
+    height: 7vh;
     align-items: center;
     justify-content: center;
-    background-color: var(--principal);
+    background-color: #701553;
+    margin-top:10px;
+    justify-content:space-between;
+   
 }
 footer p{
     text-align: center;
     font-size: 1.4em;
-    color: var(--secondary);
+    color: var(--principal);
     font-weight: bold;
-
+    margin-block-start:auto
+}
+.footer__derechos{
+    flex-basis: 42%;
+}
+.footer__iconss{
+flex-basis: 22%;
+font-size: 2.4em;
+color: var(--principal);
+margin-bottom: 0%;
 }
 
 /*---------------*/
@@ -236,18 +259,32 @@ footer p{
     header .navbar{
          flex-wrap: wrap;
          justify-content: center;
+         padding-right:10%
         
+     }
+     header .logo {
+        flex-basis:70%;
+        margin-left: 20%;
      }
      .menu .menu__item .menu__link{
         font-size: 1.4em;
     
     }
-   
+    .baner{
+        padding-left: 3%;
+        padding-right: 6%;
+    }
+    .row .font{
+        font-size: 4.0em;
+    }
+    .row .font2{
+        font-size: 2.8em;
+    }
     }
 
 
 
-    /*-----------------------*/
+/*stylos de animacion de letras-----------------------*/
     .ml3 {
         font-weight: 900;
         font-size: 5.0em;
@@ -256,12 +293,19 @@ footer p{
         color: #06249B;
       }
       
+    .font__pregunta{
+        color: #ffc107;
+        font-size:2.0em;
+        font-weight:700;
+        text-align:center;
+    }
+      
     .font{
         font-weight: 700;
         font-size: 5.8em;
         text-align: center;
         line-height: 1;
-        color: #cb7eb2;
+        color: #d542a5;
         margin-top: 10px;
     }
     .font2{
@@ -270,3 +314,169 @@ footer p{
         text-align: center;
         line-height: 1;
     }
+  
+
+ /* stylos de  planes--------------------------------------*/
+  /*  body{margin-top:20px;}*/
+.our_pricing {
+    background-color: #9b1b72;
+    background-size: 100%;
+    position: relative;
+    margin-top:20px;
+    padding:20px;
+}
+
+@media only screen and (max-width:480px) {
+    .our_pricing {
+        background-size: auto;
+    }
+}
+
+.pricingTable {
+    background: #fff none repeat scroll 0 0;
+    color: #232434;
+    margin-top: 30px;
+    padding: 50px 15px;
+   
+    position: relative;
+    text-align: center;
+    
+}
+
+@media only screen and (max-width:480px) {
+    .pricingTable {
+        margin-bottom: 60px;
+    }
+}
+
+.pricingTabletop {
+    margin-top: -30px;
+}
+
+
+.pricingTable .title {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+   
+}
+
+.pricingTable .price-month {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.pricingTable .price-value {
+    font-size: 95px;
+    line-height: 95px;
+    position: relative;
+ 
+}
+
+@media only screen and (max-width:768px) {
+    .pricingTable .price-value {
+        font-size: 130px;
+    }
+}
+
+.pricingTable .price-value .value-bg {
+    display: inline-block;
+    position: absolute;
+    left: 27%;
+    top: 30%;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.pricingTable-2 .price-value {
+    color: #e6e4ff;
+}
+
+.pricingTable-2 .price-value .value-bg {
+    color: #06249b;
+}
+
+.pricingTable .pricing-content {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+}
+
+
+.pricing-content-border>li {
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.pricingTable .pricing-content li {
+    line-height: 40px;
+}
+
+@media only screen and (max-width: 990px) {
+    .pricingTable {
+        margin-bottom: 30px;
+        
+    }
+   /* .section-title h1{
+        margin-right:26%
+    }
+    .section-title p{
+        padding-right: 27%;
+    }*/
+}
+
+@media only screen and (max-width: 767px) {
+    .pricingTable {
+        margin-bottom: 50px;
+       /* width: 66%;*/
+    }
+}
+
+.btn-price-bg {
+    background: #fb6b04;
+    border: 2px solid #fb6b04;
+    border-radius: 5000px;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    overflow: hidden;
+    padding: 9px 32px;
+    text-transform: capitalize;
+   
+}
+
+.pricingTable:hover .btn-price-bg {
+    background: #232434;
+    color: #fff;
+    border: 2px solid #232434;
+}
+
+.section-title {
+    margin-bottom: 60px;
+}
+
+h1.section-title-white {
+    color: #fff;
+}
+.section-title h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 0;
+    position: relative;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+p.section-title-white {
+    color: #fff;
+    font-size:19px
+}
+.section-title p {
+
+    width: 70%;
+    margin: auto;
+    letter-spacing: 0px;
+}
