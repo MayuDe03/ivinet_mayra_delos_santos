@@ -1,0 +1,13 @@
+$spacings: (
+ xlarge:5rem,
+ large:3rem,
+ medium:2rem,
+ small:1rem
+
+);
+@each $var , $val in $spacings {
+    .sp-#{$var}{
+        padding: #{$var};
+    }
+}
+
